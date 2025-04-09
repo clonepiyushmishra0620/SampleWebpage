@@ -1,0 +1,98 @@
+html,body{
+    margin:0;padding:0;height:100vh;
+}
+body{
+    background-image:url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");background-repeat:no-repeat;background-size:cover;z-index:0;background-attachment:fixed;background-color:rgb(0, 0, 0);height:100vh;width:100%;background-position:center;
+}
+section>nav{
+   height:50px;z-index:1;background:transparent;box-shadow:0vh 0vw blue;backdrop-filter:blur(3rem);position:fixed;top:0;left:0;width:100vw;font-weight: bolder;text-align:center;cursor:pointer;
+}
+nav a{
+    color:black;padding:23px 5vw;border:1px solid transparent;border-radius:0.3em;text-decoration:none;
+}
+nav a:hover{
+    color:rgb(255, 255, 255);background:linear-gradient(to bottom,white, rgba(123, 193, 251, 0.907),rgb(84, 182, 235),rgba(50, 201, 228, 0.726),white);text-decoration:underline 0.2em red;border:0.015em solid red;text-shadow:0em 0em 0.5em rgb(0, 0, 255);
+}
+.inputfields{
+    height:100px;width:100vw;position:absolute;top:5rem;
+}
+.labelattribute{
+    display:flex;margin:auto;justify-content:center;
+}
+#submit{
+    display:flex;margin:auto;justify-content:center;width:90px;padding:10px;border-radius:10px ;border-width:3px;cursor:pointer;color:rgb(3, 69, 156);background:linear-gradient(135deg,rgb(101, 191, 240),white,white);box-shadow:-1px -5px 60px rgb(0, 217, 255);transition: all 0.7s ease-in-out;margin-bottom:25px;
+}
+#submit:active{
+    box-shadow: 0px 0px 40px rgb(0,217,255);background:linear-gradient(225deg,rgb(101,191,240),rgb(0, 145, 255), white,white,rgb(18, 161, 171),rgb(6, 6, 227));transform:scale(75%);transition:transform 0.7s linear;
+}
+#submit:hover{
+    background:linear-gradient(315deg,rgb(101,191,240),rgba(25, 221, 218, 0.667),rgb(20, 139, 219),rgb(0, 255, 208),rgb(117, 201, 243),rgb(7, 75, 152));background-size:200% 100%;animation: glowshadow 0.7s linear infinite;
+}
+@keyframes glowshadow{
+    0%{
+        box-shadow:0px 0px 30px rgb(101, 191, 240);background-position:0% 0%;border-color:rgb(101,191,240);
+    }
+    17%{
+        box-shadow:0px 0px 30px rgb(25,221,218,0.667);background-position:17% 0%;border-color:rgb(25,221,218,0.667);
+    }
+    34%{
+        box-shadow:0px 0px 30px rgb(20,139,219);background-position:34% 0%;border-color:rgb(20,139,219);
+    }
+    50%{
+        box-shadow:0px 0px 30px rgb(0,255,208);background-position:50% 0%;border-color:rgb(0,255,208);
+    }
+    75%{
+        box-shadow:0px 0px 30px rgb(117,201,243);background-position:75% 0%;border-color:rgb(117,201,243);
+    }
+    100%{
+        box-shadow:0px 0px 30px rgb(7,75,152);background-position:100% 0%;border-color:rgb(7,75,152);
+    }
+}
+.input{
+    border-radius:20px;padding:5px;background:linear-gradient(to right,rgb(101,191,240),white,white,rgb(18,161,171));border-color:rgb(0, 145, 255);border-width:3px;text-emphasis: 5px black;
+}
+.input:hover{
+    background:linear-gradient(to right,rgb(101,191,240),white,white, white,white,white,white,rgb(18,161,171));transform:scale(95%);
+}
+.input:active{
+    background:linear-gradient(to right,rgb(101,191,240),white,white,white,rgb(18,161,171));transform:scale(100%);
+}
+#reset{
+    display:flex;margin:auto;justify-content:center;padding:10px;width:90px;border-radius:10px;border-width:3px;border-color:black;background:linear-gradient(135deg,rgb(101,191,240),white,white);box-shadow:-1px -5px 60px rgb(0,217,255);color:rgb(3,69,156);cursor:pointer;transition: all 0.7s ease-in-out;
+}
+#reset:hover{
+    background:linear-gradient(315deg,rgb(101,191,240),rgba(25,221,218,0.667),rgb(20,139,219),rgb(0,255,208),rgb(117,201,243),rgb(7,75,152));animation:glowshadow 0.7s linear infinite;background-size:200% 100%;
+}
+#reset:active{
+    box-shadow:0px 0px 40px rgb(0,217,255);background:linear-gradient(225deg,rgb(101,191,240),rgb(0,145,255),white,white,rgb(18,161,171),rgb(6,6,227));transform:scale(85%); 
+}
+.radiobuttonfields{
+    position:absolute;top:35rem;height:50px;width:100vw;font-weight:bolder;display:grid;justify-content:center;
+}
+.checkboxfields{
+    position:absolute;top:40rem;height:50px;width:100vw;font-weight:bolder;display:grid;justify-content:center;
+}
+.textareafields{
+    position:absolute;top:45rem;height:100px;width:100vw;font-weight:bolder;display:grid;justify-content:center;
+}
+.textarea{
+    border-radius:30px;padding:10px;width:300px;border-width:3px;border-color:black;box-shadow:0px 0px 40px rgb(0, 128, 126);background:transparent linear-gradient(to right,rgba(72, 200, 243, 0.682),rgb(42, 192, 187),rgb(72, 224, 224),rgb(73, 162, 252));font-weight:bolder;font-size: 21px;
+}
+.textarea:hover{
+    transform:scale(105%);background:transparent linear-gradient(to left,rgba(72,200,243,0.682),rgb(42,192,187),white, rgb(72,224,224),rgb(73,162,252));transition:transform 0.5s ease-in-out;
+}
+.dropdownfield{
+    position:absolute;top:62.5rem;height:50px;width:100vw;font-weight:bolder;display:grid;justify-content:center;
+}
+#dropdownhandle{
+    padding:9px;border-radius:5px;border-width:auto black;background:radial-gradient(circle,white,rgb(99, 246, 209), rgb(0, 179, 255),rgb(61, 169, 242),rgb(4, 109, 207));color:rgb(1, 98, 53)
+}
+#dropdownhandle:hover , #dropdownhandle:active{
+    transform:scale(105%);transition:transform 0.5s ease-out;
+}
+fieldset{
+    height:auto;border-color:rgb(0, 213, 255);border-radius:25px;background:solid transparent;backdrop-filter:blur(1.1px);
+}
+header{
+    text-align:center;text-shadow:0px 0px 50px rgb(3, 114, 154);
+}

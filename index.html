@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Sample</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.25">
+        <meta name="theme-color" content="gray">
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate, no-store">
+        <link rel="icon" href="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <nav>
+                <a href="#">Home</a> | 
+                <a href="#">About</a> |
+                <a href="#">Link</a> |
+                <a href="#">Other</a> |
+                <a href="#">Site</a> 
+            </nav>
+        </section>
+        <br>
+        <section class="inputfields">
+            <fieldset>
+                <header><u><b>Personal and contact information</b></u></header><br><br>
+                <form method="get" target="_self">
+                    <label  for="name" title="Enter your name" class="labelattribute">Name:
+                        <input type="text" name="name" id="name" placeholder="Enter your name" class="input" autofocus >
+                    </label>    
+                    <br><br>
+                    <label  for="age" title="Enter your age" class="labelattribute">Age:<input type="number" id="age" name="age" class="input" placeholder="Enter your age" autofocus ></label>
+                    <br><br>
+                    <label  for="email" title="Enter your email" class="labelattribute">Email:<input type="email" name="email" id="email" class="input" placeholder="Enter your email" autofocus ></label>
+                    <br><br>
+                </form>
+            </fieldset>
+            <br><br>
+            <form method="get" target="_self">              
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </form>   
+        </section>
+        <br><br>
+        <section class="radiobuttonfields">
+            <form method="get" target="_self">Did you like this view?:
+                <br>
+                <label for="radiobutton" title="Yes">
+                    <input type="radio" id="radiobutton" class="radiobutton" name="radiobutton"> Yes
+                </label>
+                <br>
+                <label for="radiobutton1" title="No">
+                    <input type="radio" id="radiobutton1" class="radiobutton1" name="radiobutton1"> No
+                </label>
+            </form>
+        </section>
+        <br>
+        <section class="checkboxfields">
+            <form method="get" target="_self">How would you rate this scenic beauty?
+                <br>
+                <label for="one" title="best">
+                    <input type="checkbox" id="one" class="checkbox" name="one"> Best
+                </label>
+                <br>
+                <label for="two" title="worst">
+                    <input type="checkbox" id="two" class="checkbox" name="two"> Worst
+                </label>
+            </form>
+        </section>
+        <br><br>
+        <section class="textareafields">
+            <form method="get" target="_self">
+                What are your views on the scenic beauty?
+                <br><br>
+                <label for="textarea" title="Enter your views here">
+                    <textarea id="textarea" name="textarea" class="textarea" placeholder="Enter your views here..." rows="6" cols="50"></textarea>
+                </label>
+            </form>
+        </section>
+        <br>
+        <section class="dropdownfield">
+            <form method="get" target="_self">
+                Random:<br>
+                <select id="dropdownhandle" name="dropdownhandle">
+                    <option id="anonymous" value="disabledoption" selected disabled hidden>Click an option</option>
+                    <br>
+                    <option value="India">India</option>
+                    <br>
+                    <option  value="USA">USA</option>
+                    <br>
+                    <option  value="Africa">Africa</option><br>
+                </select>
+            </form>
+        </section>
+    </body>
+</html>
